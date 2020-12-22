@@ -1,5 +1,6 @@
 # Lithion
-backend:
+change directory to the root folder:-
+
 => npm install
 Let the packages install. Then,
 
