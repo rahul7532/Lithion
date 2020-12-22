@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "63de9da7-dbcd-47f3-826b-0262d45b8453",
+		"name": "lithion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"jaishreeram@gmail.com\",\n    \"company\":\"ayodhya\",\n    \"job\":\"pandit\",\n    \"password\":\"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/user/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/user/all",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"loki@gmail.com\",\n    \"password\":\"password1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"sons and builders\",\n    \"address\":\"new delhi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/company/create",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"company",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all companies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/company/all",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"company",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get company by name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"builders and sons\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/company/getdata",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"company",
+						"getdata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "visit a company",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"5fe261a3288d648159253e5b\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/company/visit",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"company",
+						"visit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\":\"Plot twist, the server is you.\",\n    \"user\":\"loki@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/post/addpost",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"post",
+						"addpost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/post/all",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"post",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get post by username",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":\"loki@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/post/getpostbyusername",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"post",
+						"getpostbyusername"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upvote a post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"5fe26406a8970d82566688e7\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/post/upvote",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"post",
+						"upvote"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
